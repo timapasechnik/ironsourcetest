@@ -4993,8 +4993,8 @@ var installBannerPosition = "topLeft"; // topLeft or bottomMid
 
 // Set options
 
-var bgTypeOpt = "varB"; //varA varB  varC
-var cowUnlock = "varB"; //varA varB  varC
+var bgTypeOpt = "varA"; //varA varB  varC
+var cowUnlock = "varA"; //varA varB  varC
 // Platform
 var platformType = "ironsource"
 // google   facebook  unity  appreciate  vungle adcolony tapjoy
@@ -5028,7 +5028,7 @@ if (/android/i.test(userAgent)) {
 // ar - Arabic
 ////////////////////////////
 // Select language by yourself. Uncomment next line
-userLang = "ru"
+userLang = "en"
 
 
 /*
@@ -17603,7 +17603,7 @@ function InitGameCanvas(lib, img, cjs, ss) {
   			var scaleFactor = 1;
   			var multypl = 1.75 // multiplier for Horizontal orient
   			var widthInWidth = lib.properties.width;
-  			var heightInHeight = lib.properties.width;
+  			var heightInHeight = lib.properties.height;
 
   			var FPS = 60;
 
@@ -17910,8 +17910,10 @@ function InitGameCanvas(lib, img, cjs, ss) {
   				widthReal = canvas.width;
   				heightReal = canvas.height;
 
+  				//widthInWidth = canvas.width;
+  			//	heightInHeight = canvas.height;
   				widthInWidth = lib.properties.width;
-  				heightInHeight = lib.properties.height;
+  			 heightInHeight = lib.properties.height;
 
   				th.x = widthReal / pRatio * 0.5;
   				th.y = heightReal / pRatio * 0.5;
@@ -17996,7 +17998,7 @@ function InitGameCanvas(lib, img, cjs, ss) {
   					resizeCanvasFlag = false;
   					RecalulateLoc();
   					BankBarMenuBGScale();
-  					//IncreaseTopBG();
+  					IncreaseTopBG();
   					FloorRepos();
   					UnlockBtnPosUpdate();
   					//	ShadingRepos();
@@ -19984,8 +19986,10 @@ function resizeCanvas() {
 
   var w = mraid.getMaxSize().width,
     h = mraid.getMaxSize().height;
-  var iw = window.innerWidth,
-    ih = window.innerHeight;
+  //var iw = window.innerWidth,
+  //  ih = window.innerHeight;
+  var iw = mraid.getMaxSize().width,
+    ih = mraid.getMaxSize().height;
   pRatio = window.devicePixelRatio, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
 
   if (isResp) {
