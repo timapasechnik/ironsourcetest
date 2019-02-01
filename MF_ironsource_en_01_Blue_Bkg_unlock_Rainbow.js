@@ -19994,6 +19994,12 @@ function resizeCanvas() {
 
   var w = mraid.getMaxSize().width,
     h = mraid.getMaxSize().height;
+    console.log("++++++++ RESIZE CANVAS +++++++++++");
+console.log("resizeCanvasFlag = "+ resizeCanvasFlag);
+console.log("w = "+ w + "; h =  "+ h);
+console.log("++++++++======+++++++++++");
+    
+    
   //var iw = window.innerWidth,
   //  ih = window.innerHeight;
   var iw = mraid.getMaxSize().width,
