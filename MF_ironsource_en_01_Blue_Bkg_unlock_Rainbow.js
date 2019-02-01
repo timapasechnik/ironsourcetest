@@ -20023,9 +20023,13 @@ console.log("++++++++======+++++++++++");
     canvas.width = w * pRatio * sRatio;
     canvas.height = h * pRatio * sRatio;
 
-    canvas.style.width = w * sRatio + 'px';
-    canvas.style.height = h * sRatio + 'px';
+    canvas.style.width = w * pRatio * sRatio + 'px';
+    canvas.style.height = h * pRatio * sRatio + 'px';
   }
+  console.log("++++++++Canvas+++++++++++");
+  console.log("canvas.width = "+ canvas.width + "; canvas.height =  "+ canvas.height);
+  console.log("++++++++======+++++++++++");
+
 
 
   stage.scaleX = pRatio * sRatio;
