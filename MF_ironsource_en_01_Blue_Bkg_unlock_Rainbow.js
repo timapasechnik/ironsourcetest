@@ -20025,10 +20025,11 @@ console.log("++++++++======+++++++++++");
 
     canvas.style.width = w * pRatio * sRatio + 'px';
     canvas.style.height = h * pRatio * sRatio + 'px';
-  }
-  console.log("++++++++Canvas+++++++++++");
+      console.log("++++++++Canvas+++++++++++");
   console.log("canvas.width = "+ canvas.width + "; canvas.height =  "+ canvas.height);
   console.log("++++++++======+++++++++++");
+  }
+  
 
 
 
