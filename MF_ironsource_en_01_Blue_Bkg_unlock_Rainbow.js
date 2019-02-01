@@ -18055,6 +18055,9 @@ function InitGameCanvas(lib, img, cjs, ss) {
   				//if(widthReal/(widthSrc*pRatio) >1)
   				//{
   				var numBG = Math.ceil(widthReal / (widthSrc)) //*pRatio
+                cl("===================================")
+          cl("widthReal = "+widthReal+"; widthSrc = "+widthSrc);
+          cl("===================================")
   				for (i = 0; i < numBG; i++) {
   					var bg = new lib.TopBG();
   					var b = bg.getBounds();
