@@ -17515,7 +17515,7 @@ function InitGameCanvas(lib, img, cjs, ss) {
   		// timeline functions:
   		this.frame_0 = function() {
   			// TEST SECTION
-  			var test = false; // switch on/off test mode
+  			var test = true; // switch on/off test mode
   			//var test = true; 				// switch on/off test mode
 
   			var frequency = 30;
