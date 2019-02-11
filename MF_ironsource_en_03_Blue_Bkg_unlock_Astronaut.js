@@ -17752,7 +17752,7 @@ function InitGameCanvas(lib, img, cjs, ss) {
           iBtnB = installButton.getBounds();
           var btnLoc = topRight.pointLoc0;
           installButton.x = - 1.5*iBtnB.width * iBtnScale;
-          installButton.y = 5; //bounds.height*0.5;
+          installButton.y = 6; //bounds.height*0.5;
 
           topRightBTN.addChild(installButton);
         } else {
